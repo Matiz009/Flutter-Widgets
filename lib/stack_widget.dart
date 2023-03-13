@@ -11,9 +11,15 @@ void main() {
         height: 300,
         width: 200,
         color: Colors.tealAccent,
-        child: Stack(children: const [
-          Text('First Element'),
-          Icon(Icons.access_alarms_outlined)
+        child: Stack(children:  [
+          const Text('First Element'),
+          const Icon(Icons.access_alarms_outlined),
+          Container(
+            height: 300,
+            width: 200,
+            color: Colors.deepPurple,
+            child: const Text('Hello'),
+          )
         ]),
       )),
     ),
